@@ -82,11 +82,11 @@ let db = {
     
 // Get the client_code from the request body
 
-// app.listen(port, () =>{
-//     console.log('Servidor está rodando ');
-// })
-app.listen(21263, () => {
-    console.log('Express started at http://localhost:21263');
-})
+app.listen(port, () =>{
+   console.log('Servidor está rodando ');
+ })
+//app.listen(21263, () => {
+  //  console.log('Express started at http://localhost:21263');
+//})
 
 
