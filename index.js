@@ -46,7 +46,7 @@ let db = {
   let dberror = [{
     "result": {
       "error": {
-        "message": "necessário enviar body"
+        "message": "necessário enviar código do cliente"
       }
     }
   }]
@@ -59,7 +59,7 @@ let db = {
   // Inserir dados
   app.post('/users/dataUsersSAP', (req, res) =>{
       const body = req.body;
-    if(!body){
+    if(!body.codigo_cliente || body.codigo_cliente === ""){
          return res.json(dberror);
     }
     else{
