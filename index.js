@@ -72,7 +72,7 @@ let db = {
   app.post('/users/dataUsersSAP', (req, res) =>{
       const body = req.body;
     if(!body.codigo_cliente || body.codigo_cliente === ""){
-         res.status(400).end();
+         res.status(400);
          return res.json(dberror);
     }
     else{
