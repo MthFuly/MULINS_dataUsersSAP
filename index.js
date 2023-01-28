@@ -25,6 +25,14 @@ let db = {
         "limite_recomendado": 25000.89
       },
       {
+        "codigo_seguradora": "ATRADIUS",
+        "limite_recomendado": 25000.89
+      },
+      {
+        "codigo_seguradora": "EULER",
+        "limite_recomendado": 25000.89
+      },
+      {
         "codigo_seguradora": "EULER",
         "limite_recomendado": 25000.89
       },
@@ -39,6 +47,10 @@ let db = {
       {
         "codigo_seguradora": "RISCO DBA",
         "limite_recomendado": 25000.89
+      },
+      {
+        "codigo_seguradora": "RISCO DBA",
+        "limite_recomendado": 25000.00
       }
     ]
   }
@@ -60,6 +72,7 @@ let db = {
   app.post('/users/dataUsersSAP', (req, res) =>{
       const body = req.body;
     if(!body.codigo_cliente || body.codigo_cliente === ""){
+         res.status(400).end();
          return res.json(dberror);
     }
     else{
