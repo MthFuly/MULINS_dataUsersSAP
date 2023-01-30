@@ -29,6 +29,14 @@ let db = {
         "limite_recomendado": 25000.89
       },
       {
+        "codigo_seguradora": "CORPORATIVO",
+        "limite_recomendado": 25000.89
+      },
+      {
+        "codigo_seguradora": "CORPORATIVO",
+        "limite_recomendado": 25000.00
+      },   
+      {
         "codigo_seguradora": "EULER",
         "limite_recomendado": 25000.89
       },
